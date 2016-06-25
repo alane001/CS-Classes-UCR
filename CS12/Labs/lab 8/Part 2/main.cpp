@@ -1,10 +1,19 @@
+//----------------------------------------------------------------------------------------------
+//DESCRIPTION
+//This week you convert the operator<< function to use a recursive solution and add a recursive
+//exists function that determines whether a particular integer value exists within the IntList.
+
+
+//----------------------------------------------------------------------------------------------
+
+
 #include <iostream>
 #include "IntList.h"
 
 
 int main() {
-   
-   
+
+
    IntList test1;
    IntList test2;
    int testNum;

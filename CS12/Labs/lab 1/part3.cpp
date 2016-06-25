@@ -1,3 +1,12 @@
+//-----------------------------------------------------------------------------------------------
+//DESCRIPTION
+
+//In this exercise you are to use a vector to store integers entered by the user. Once you have filled the vector,
+// ask the user for a value to search for. If found, remove the value from the vector,
+//keeping all other values in the same relative order, and then display the remaining values.
+
+//-----------------------------------------------------------------------------------------------
+
 #include <iostream>
 #include <vector>
 #include <climits>

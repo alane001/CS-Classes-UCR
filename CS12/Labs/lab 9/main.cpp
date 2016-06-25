@@ -1,3 +1,14 @@
+//----------------------------------------------------------------------------------------------
+//DESCRIPTION
+
+//This lab uses the Deck and Card classes created in program 3. This lab just uses a recursive function
+//to merge sort the deck in the required order. Just copied the two classes over from program 3 for this lab.
+
+
+//----------------------------------------------------------------------------------------------
+
+
+
 #include <iostream>
 #include "Card.h"
 #include "Deck.h"

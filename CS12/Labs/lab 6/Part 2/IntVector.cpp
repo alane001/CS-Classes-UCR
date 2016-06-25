@@ -9,22 +9,22 @@ IntVector::IntVector():sz(0), cap(0), data(0)
     return;
 }
 
-//IMPORTANT: Only need to have int value = 0 in decleration in .h file! NOT HERE!!!!!!!
+//IMPORTANT: Only need to have int value = 0 in declaration in .h file! NOT HERE!!!!!!!
 IntVector::IntVector (unsigned size, int value)
 {
     sz = size;
     cap = size;
     data = 0;
-    
+
     //dynamic allocate an array of same size
     data = new int[size];
-    
+
     //Initialize all elements to value
     for(unsigned i = 0; i < size; ++i)
     {
         data[i] = value;
     }
-    
+
     return;
 }
 
@@ -36,7 +36,7 @@ IntVector::~IntVector()
         //the bracets delete the entire array
         delete [] data;
     }
-    
+
     return;
 }
 
@@ -53,27 +53,27 @@ unsigned IntVector::capacity() const
 bool IntVector::empty() const
 {
     bool answer = false;
-    
+
     if(sz == 0)
     {
         //it is empty if sz is size zero
         answer = true;
     }
-    
+
     return answer;
-    
+
 }
 
 const int & IntVector::at(unsigned index) const
 {
-    
+
     if(index >= sz)
     {
         throw out_of_range("IntVector::at_range_check");
     }
-    
+
     return data[index];
-    
+
 }
 
 const int & IntVector::front() const

@@ -1,3 +1,26 @@
+//--------------------------------------------------------------------------------------------------
+//DESCRIPTION
+
+//Distance Class
+
+//The Distance class will represent a distance in some number of feet and inches. This Distance object must always be positive
+//and never contain an inch value greater than or equal to 12 (12 inches equals 1 foot). It is your job, as the engineer/designer
+// of this Distance class to make sure this is always true.
+
+//Separate Files
+
+//As is commonly done when designing a class, you are to separate your class from the program that will use the class.
+// You will need the following 3 files:
+
+//main.cpp: contains the main function and any other global functions used to test your Distance class.
+//Distance.h: the Distance class header (aka interface) file. Contains the declaration of the Distance class.
+//Distance.cpp: the Distance class implementation file. Contains the implementations of all Distance member functions.
+//You will submit all 3 files, main.cpp, Distance.h and Distance.cpp.
+
+
+//---------------------------------------------------------------------------------------------------
+
+
 #include <iostream>
 
 //Must include header file

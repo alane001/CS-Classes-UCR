@@ -2,10 +2,13 @@
 
 using namespace std;
 
-
+//----------------------------------------------------------------------------------------------
+//DESCRIPTION
 //LAB 6 PART 1
 //You are to implement a function named mystrcat, which will be your own version of the cstring library's strcat function.
 //strcat is strcat(destStr,SourceStr) which copies sourceStr to the end of destStr
+
+//----------------------------------------------------------------------------------------------
 
 /* Concatenate strings
    Appends a copy of the source string to the destination string.

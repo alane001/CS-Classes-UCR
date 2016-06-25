@@ -224,6 +224,7 @@ void IntList::clear()
 void IntList::push_back(int value)
 {
     //A quick check shows that you have a seg fault when attempting to puch back following the removal of multiple duplicates.
+    //Turns out this part was fine, it had to be fixed in the remove duplicates part where p = tail
     if(empty())
     {
         head = new IntNode(value);
@@ -417,6 +418,7 @@ void IntList::remove_duplicates()
                 }
             }
             //HAD to add this to make sure push back still worked after all, before tail = p was outside of loop which caused tail = 0 probelms!
+            //this makes sure that the tail is indeeded the last element in the list, NOT ZERO
             if(p -> next == 0)
             {
                 tail = p;
@@ -427,64 +429,6 @@ void IntList::remove_duplicates()
         //This must be here in order for it to work properly
         //tail = p;
     }
-    //     //THIS IS THE UNTOUCHED ONE ------------------
-        // p = head;
-        // while(p != tail)
-        // {
-        //     n = p -> next;
-        //     before = p;
-        //     while(n != 0)
-        //     {
-        //         if(p -> data == n -> data)
-        //         {
-        //             before -> next = n -> next;
-        //             delete n;
-                    
-        //         }
-        //         before = n;
-        //         n = n -> next;
-        //     }
-        //     p = p -> next;
-        
-        // }
-    //     //---------------------------------------
-    //     p = head;
-    //     while(p != 0)
-    //     {
-    //         n = p -> next;
-    //         before = p;
-    //         while(n != 0)
-    //         {
-    //             // cout << "p data: " << p -> data << endl;
-    //             // cout << "before: " << before -> data << endl;
-    //             // cout << "n: " << n-> data << endl;
-    //             // cout << "n next: " << n-> next << endl << endl;
-    //             if(p -> data == n -> data)
-    //             {
-    //                 // //cout << "GOT HERE" << endl;
-    //                 if(n -> next == 0)
-    //                 {
-    //                     delete n;
-    //                     n = 0;
-                        
-    //                 }
-    //                 else
-    //                 {
-    //                     before -> next = n -> next;
-    //                     delete n;
-    //                     n = before -> next;
-    //                 }
-    //             }
-    //             else
-    //             {
-    //                 before = n;
-    //                 n = n -> next;
-    //             }
-    //         }
-            
-    //         p = p -> next;
-    //     }
-    // }
 }
 
 

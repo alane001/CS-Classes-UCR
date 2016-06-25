@@ -1,5 +1,13 @@
 // This program plays a guessing game where you try to guess the number
 // the computer has picked.
+
+//----------------------------------------------------------------------------------------------------------
+//DESCRIPTION
+//In this exercise, you'll practice finding and fixing C++ syntax errors as well as some logic errors.
+//You will also learn to generate random integers using the rand() function.
+
+//----------------------------------------------------------------------------------------------------------
+
 #include <iostream>
 #include <cstdlib>
 

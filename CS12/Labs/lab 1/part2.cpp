@@ -1,5 +1,27 @@
 // This program implements the Monte Carlo Method for estimating the value of PI.
 
+//-----------------------------------------------------------------------------------------------
+//DESCRIPTION
+//The Monte Carlo method is used in modeling a wide-range of physical systems at the forefront of scientific research today.
+//Monte Carlo simulations are statistical models based on a series of random numbers.
+//Let's consider the problem of estimating Pi by utilizing the Monte Carlo method.
+
+//Suppose you have a circle inscribed in a square (as in the figure). The experiment simply consists of throwing darts
+//on this figure completely at random (meaning that every point on the dartboard has an equal chance of being hit by the
+//dart). How can we use this experiment to estimate Pi? The answer lies in discovering the relationship between the
+//geometry of the figure and the statistical outcome of throwing the darts. Let's first look at the geometry of the figure.
+
+//Let's assume the radius of the circle is R, then the Area of the circle = Pi * R^2 and the Area of the square = 4 * R^2.
+//Now if we divide the area of the circle by the area of the square we get Pi / 4.
+
+//But, how do we estimate Pi by simulation? In the simulation, you keep throwing darts at random onto the dartboard.
+//All of the darts fall within the square, but not all of them fall within the circle. Here's the key. If you throw darts
+//completely at random, this experiment estimates the ratio of the area of the circle to the area of the square,
+//by counting the number of darts within each area. Our study of the geometry tells us this ratio is Pi/4. So, now we can
+//estimate Pi as
+
+//---------------------------------------------------------------------------------------------------
+
 #include <iostream>
 #include <cstdlib>
 #include <cmath>

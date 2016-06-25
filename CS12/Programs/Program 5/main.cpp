@@ -1,41 +1,66 @@
+//----------------------------------------------------------------------------------------------
+//DESCRIPTION
+
+//SAME as lab 7 just with added member functions, see main.cpp for lab 7.
+
+//----------------------------------------------------------------------------------------------
+
+
+
 #include "IntList.h"
 
 #include <iostream>
 using namespace std;
 
-// void SomeFunction(IntList localObj) 
-// {
-//     localObj.push_front(12);
-   
-//     return;
-// }
-
 int main()
 {
     //My tests ------------------------------------------------------------------
-    //IntList list1;
-    // list1.clear();
-    
+    // IntList list1;
+    // // // list1.clear();
+
     // list1.push_front(30);
     // list1.push_front(20);
     // list1.push_front(10);
-    
-    // cout << list1 << endl;
-    
-    // IntList list2;
-    
+
+    // cout << "list1: " << list1 << endl;
+
+    // list1.remove_duplicates();
+
+    // cout << "list1: " << list1 << endl;
+
+    // // // list1.push_front(20);
+    // // // list1.push_front(20);
+    // // //list1.push_back(10);
+
+    // list1.push_back(10);
+    // // list1.insert_ordered(20);
+    // // list1.insert_ordered(20);
+    // // list1.insert_ordered(20);
+    // // list1.insert_ordered(10);
+    // // list1.push_back(30);
+    // // list1.push_back(99);
+
+    // cout << "list1: " << list1 << endl;
+
+    // list1.remove_duplicates();
+
+    // cout << "list1 after remove duplicates: " << list1 << endl;
+
+
     // list2.push_front(15);
     // list2.push_front(5);
     // list2.push_front(9);
-    
+
+    // cout << "list2: " << list2 << endl;
+
     // list1 = list2;
-    
-    // cout << list1 << endl;
-    
+
+    // cout << "list1 should be list2 now: " << list1 << endl;
+
     // list1 = list1;
-    
+
     // cout << "should be the same: " << list1 << endl;
-    
+
     // list1.insert_ordered(20);
     // cout << list1 << endl;
     // list1.insert_ordered(10);
@@ -46,46 +71,46 @@ int main()
     // list1.insert_ordered(30);
     // list1.insert_ordered(50);
     // list1.insert_ordered(-5);
-    
+
     // cout << list1 << endl;
-    
+
     // cout << endl << "Is empty now? " << list1.empty() << endl;
-    
+
     // cout << list1;
     // // list1.display();
-    
+
     // cout << endl << "Now testing if clear works. " << endl;
     // list1.clear();
     // list1.clear();
     // cout << list1;
-    
+
     // cout << endl << "Is empty now? " << list1.empty() << endl;
-    
+
     // cout << list1;
-    
+
     // cout << endl;
     // list1.push_front(10);
     // list1.push_front(40);
     // list1.push_front(50);
-    
+
     // list1.push_back(55);
     // list1.push_back(99);
-    
+
     // cout << "Test is operator<< works: " << list1;
-    
+
     // list1.selection_sort();
-    
+
     // cout << endl;
-    
-    
+
+
     //---------------------------------------------------------------------------
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
   cout << "Enter a test number(1-5): ";
     int test;
     cin >> test;
@@ -346,7 +371,7 @@ int main()
   }
 
    /*
-   * Destructor will be tested by looking at code. There is no run-time 
+   * Destructor will be tested by looking at code. There is no run-time
    * test for it. Make sure your destructor actually deletes ALL nodes, not
    * just the head and/or tail.
    */

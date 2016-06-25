@@ -1,3 +1,35 @@
+//----------------------------------------------------------------------------------------------
+//DESCRIPTION
+
+//Problem Definition
+//Build a Date class and a main function to test it.
+
+//Private Member Functions
+
+//The functions declared private isLeap, daysPerMonth, name, number, are helper functions - member functions that will never
+//be needed by a user of the class, and so do not belong to the public interface (which is why they are "private").
+//They are, however, needed by the interface functions (public member functions), which use them to test the validity of
+//arguments and construct valid dates. For example, the constructor that passes in the month as a string will call the number
+//function to assign a value to the unsigned member variable month.
+
+//isLeap: The rule for whether a year is a leap year is:
+
+//(year % 4 == 0) implies leap year
+//except (year % 100 == 0) implies NOT leap year
+//except (year % 400 == 0) implies leap year
+//So, for instance, year 2000 is a leap year, but 1900 is NOT a leap year. Years 2004, 2008, 2012, 2016, etc. are all leap years.
+// Years 2005, 2006, 2007, 2009, 2010, etc. are NOT leap years.
+
+//Output Specifications
+
+//Read the specifications for the print function carefully. The only cout statements within your Date member functions should be:
+// 1. the "Invalid Date" warnings in the constructors
+// 2, in your two print functions
+
+
+//----------------------------------------------------------------------------------------------
+
+
 #include <iostream>
 #include <string>
 
@@ -5,7 +37,24 @@ using namespace std;
 
 class Date
 {
- private:
+ private:Accessor Functions
+
+add
+subtract
+multiply
+divide
+display
+The following are a list of the rules of arithmetic for fractions:
+
+(a/b) + (c/d) = (ad + bc) / (b*d)
+(a/b) - (c/d) = (ad - bc) / (b*d)
+(a/b) * (c/d) = (ac) / (bd)
+(a/b) / (c/d) = (ad) / (cb)
+Note that for this lab, when you perform an operation, you do not need to simplify the resulting fraction, i.e., 4/5 * 5/10 = 20/50. You should not simplify this to 2/5 at this point.
+
+The display function should output the Rational object in the format:
+
+n / d
    unsigned day;
    unsigned month;
    string monthName;
